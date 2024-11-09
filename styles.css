@@ -2,9 +2,10 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: Arial;
 }
 
-.container {
+.hero-container {
     max-width: 1200px;
     margin: auto;
     font-family: Arial;
@@ -17,7 +18,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial;
 }
 
 header ul {
@@ -34,7 +34,6 @@ header li {
 .contact-btn {
     padding: 10px 30px;
     background-color: #55a1c1;
-    ;
     color: white;
     border: none;
     border-radius: 30px;
@@ -44,7 +43,6 @@ header li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    font-family: Arial;
 }
 
 .hero .title {
