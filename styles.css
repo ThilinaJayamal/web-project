@@ -8,6 +8,7 @@
 body {
     scroll-behavior: smooth;
     color: #39354f;
+    overflow-x: hidden;
 }
 
 a {
@@ -21,6 +22,26 @@ a {
     max-width: 1200px;
     margin: auto;
     font-family: Arial;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    order: 1;
+}
+
+.hero-right {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: space-between;
+    order: 2;
 }
 
 header {
@@ -65,7 +86,8 @@ header li {
 
 .hero .profile {
     border-radius: 300px 0px 300px 300px;
-    width: 100%;
+    max-width: 100%;
+    max-height: calc(100vh - 80px);
     height: auto;
     background-color: #d9f4ff;
 }
@@ -119,6 +141,12 @@ h1 {
     opacity: 0.8;
 }
 
+.about-container .table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
 /*---------------------education---------------------- */
 .edu-container {
     max-width: 1200px;
@@ -138,6 +166,43 @@ h1 {
     opacity: 0.8;
 }
 
+.edu-container .table {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.edu-container .date {
+    font-size: 10pt;
+    background-color: rgb(235, 235, 235);
+    padding: 4px 8px;
+    display: inline-block;
+    margin-bottom: 6px;
+    border-radius: 18px;
+}
+
+.edu-container .icon-container {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #55a1c1;
+    border-radius: 30px;
+}
+
+
+.edu-container .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.edu-container .row {
+    display: flex;
+    gap: 6px;
+}
+
 /*----------------skills-----------------------*/
 
 .skill-container {
@@ -149,7 +214,11 @@ h1 {
 }
 
 .skill-container .card {
-    background-color: #5dade2;
+    /*background-color: #5dade2;*/
+    border: 1px solid hsl(0, 0%, 100%, 0.2);
+    background-color: hsla(0, 0%, 88%, 0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: 4px -2px 4px -2px rgba(24, 70, 252, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,6 +226,13 @@ h1 {
     color: #fff;
     padding: 10px;
     border-radius: 8px;
+    transition: ease-in-out 0.25s all;
+    cursor: pointer;
+}
+
+.skill-container .card:hover {
+    transform: scale(0.9);
+    z-index: 100;
 }
 
 .skill-container .card img {
@@ -164,6 +240,17 @@ h1 {
     height: 50px;
 }
 
+.skill-container .table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.skill-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 
 /*----------------------projects---------------------------*/
 
@@ -187,6 +274,7 @@ h1 {
     justify-content: space-between;
     background-color: #fff;
     border-top: 1px solid rgba(12, 122, 248, 0.4);
+    z-index: 100;
 }
 
 .project-container .card {
@@ -253,14 +341,37 @@ textarea {
 
 }
 
+.contact-container .table {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px
+}
+
+.contact-table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inline-input {
+    display: flex;
+    gap: 20px;
+}
 
 /*------------------------projects----------------------*/
 
 .project-container .prev {
     object-position: center;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 300px;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.project-container .prev:hover {
+    transform: scale(2);
 }
 
 .github-icon {
@@ -328,3 +439,102 @@ textarea {
 }
 
 /*--------------------media queary---------------------*/
+
+@media (max-width:1220px) {
+
+    .edu-container,
+    .about-container,
+    .hero-container,
+    .contact-container,
+    .project-container,
+    .experience-container,
+    .skill-container,
+    .edu-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:1080px) {
+    .edu-container .table {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hero-container .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-right {
+        order: 2;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-left {
+        order: 1;
+        align-items: center;
+    }
+
+    .hero-left p {
+        opacity: 0.8;
+        line-height: 1.5rem;
+    }
+
+    .hero-left .title {
+        text-align: center;
+    }
+
+    .hero p {
+        text-align: center;
+    }
+
+    .project-container .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width:850px) {
+    .about-container .table {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-container .table {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .project-container .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container .table {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:570px) {
+    .project-container .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:450px) {
+    .skill-table {
+        grid-template-columns: 1fr;
+    }
+
+    .inline-input {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
