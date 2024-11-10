@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thilina Jayamal</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 
 <body>
     <div class="hero-container">
+        <!--NavBar-->
         <header>
             <div>Thilina Jayamal</div>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Education</li>
-                <li>Skills</li>
-                <li>Experience</li>
-                <li>Projects</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
-
-            <button class="contact-btn">Contact</button>
+            <a href="#contact"><button class="contact-btn">Contact</button></a>
         </header>
 
         <!--Hero section-->
@@ -39,13 +39,15 @@
                     portfolio highlights my skills, education, and projects.
                     Take a look to learn more about my journey in tech!"
                 </p>
-                <button class="btn">
-                    More about me
-                    <div
-                        style="width: 38px; height: 38px; display: flex;justify-content: center;align-items: center; background-color: #55a1c1; border-radius: 50px;">
-                        <img src="assets/Right Arrow.png" alt="" style="width: 24px; height: 24px;">
-                    </div>
-                </button>
+                <a href="#about">
+                    <button class="btn">
+                        More about me
+                        <div
+                            style="width: 38px; height: 38px; display: flex;justify-content: center;align-items: center; background-color: #55a1c1; border-radius: 50px;">
+                            <img src="assets/Right Arrow.png" alt="" style="width: 24px; height: 24px;">
+                        </div>
+                    </button>
+                </a>
             </div>
 
 
@@ -75,10 +77,9 @@
     </div>
 
     <!--About section-->
-    <div style="background-color: rgb(5, 33, 78);">
-        <div style="max-width: 1200px; margin:auto; padding: 50px 0px; color: #fff;">
-            <h1 style="margin-bottom: 50px; text-transform: uppercase; font-weight: 500;">About <span
-                    style="color: #72cef6;">Me</span></h1>
+    <div style="background-color: rgb(5, 33, 78);" id="about">
+        <div class="about-container">
+            <h1>About <span style="color: #72cef6;">Me</span></h1>
             <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 20px;">
                 <p style="font-size: 12pt; opacity: 0.8; line-height: 1.5rem;">
                     I am an undergraduate student currently pursuing my studies at the University of Sri
@@ -94,27 +95,27 @@
                     <h2 style="margin: 0px 10px 20px 10px; font-weight: 500;">Personal Information</h2>
                     <div style="display: grid; grid-template-columns: repeat(2,1fr);">
                         <div>
-                            <p style="padding: 10px;"><span style="opacity: 0.8;">Name:</span> Thilina
+                            <p><span>Name:</span> Thilina
                                 Jayamal</p>
-                            <p style="padding: 10px;"><span style="opacity: 0.8;">Age:</span> 22 Years
+                            <p><span>Age:</span> 22 Years
                             </p>
-                            <p style="padding: 10px;"><span style="opacity: 0.8;">Freelancer:</span>
+                            <p><span>Freelancer:</span>
                                 Available</p>
-                            <p style="padding: 10px;"><span style="opacity: 0.8;">Phone:</span> +94
+                            <p><span>Phone:</span> +94
                                 75-9622397</p>
-                            <p style="padding: 10px;"><span style="opacity: 0.8;">Whatsapp:</span> +94
+                            <p><span>Whatsapp:</span> +94
                                 75-9622397</p>
                         </div>
 
                         <div>
-                            <p style="padding: 10px;"><span style="opacity: 0.8;">Nationality:</span>
+                            <p><span>Nationality:</span>
                                 Sri
                                 Lankan</p>
-                            <p style="padding: 10px;"><span style="opacity: 0.8;">Language:</span>
+                            <p><span>Language:</span>
                                 Sinhala & English</p>
-                            <p style="padding: 10px;"><span style="opacity: 0.8;">Email:</span>
+                            <p><span>Email:</span>
                                 jayamalt398@gmail.com</p>
-                            <p style="padding: 10px;"><span style="opacity: 0.8;">Projects:</span>
+                            <p><span>Projects:</span>
                                 5+</p>
                         </div>
                     </div>
@@ -124,12 +125,9 @@
     </div>
 
     <!--Education section-->
-
-    <div style="background-color: #fff;">
-        <div
-            style="max-width:1200px; margin:auto; display: flex; flex-direction: column; gap: 20px; padding: 50px 0px;">
-            <h1 style="text-transform: uppercase; font-weight: 500; margin-bottom: 50px;">Education</h1>
-
+    <div style="background-color: #fff;" id="education">
+        <div class="edu-container">
+            <h1>Education</h1>
             <div style="display: grid; width: 100%; grid-template-columns: repeat(2,1fr);">
                 <div style="display: flex; flex-direction: column; gap: 20px;">
                     <div style="display: flex; gap: 6px;">
@@ -141,8 +139,7 @@
                             <span
                                 style="font-size: 10pt; background-color: rgb(235, 235, 235); padding: 4px 8px; display: inline-block; margin-bottom: 6px; border-radius: 18px;">2023
                                 - Present</span><br />
-                            <p style="font-size: 12pt; text-transform: uppercase;">BICT Degree - <span
-                                    style="opacity: 0.8;">University of Sri
+                            <p>BICT Degree - <span>University of Sri
                                     Jayawardenepura</span></p>
                         </div>
                     </div>
@@ -155,8 +152,8 @@
                             <span
                                 style="font-size: 10pt; background-color: rgb(235, 235, 235); padding: 4px 8px; display: inline-block; margin-bottom: 6px; border-radius: 18px;">2024
                                 July</span><br />
-                            <p style="font-size: 12pt; text-transform: uppercase;">UI / UX for Beginners Certificate -
-                                <span style="opacity: 0.8;">Greate Learning</span>
+                            <p>UI / UX for Beginners Certificate -
+                                <span>Greate Learning</span>
                             </p>
                         </div>
                     </div>
@@ -172,8 +169,8 @@
                             <span
                                 style="font-size: 10pt; background-color: rgb(235, 235, 235); padding: 4px 8px; display: inline-block; margin-bottom: 6px; border-radius: 18px;">2024
                                 July 08</span><br />
-                            <p style="font-size: 12pt; text-transform: uppercase;">Frontend Developer (React)
-                                Certificate - <span style="opacity: 0.8;">HackerRank</span></p>
+                            <p>Frontend Developer (React)
+                                Certificate - <span>HackerRank</span></p>
                         </div>
                     </div>
 
@@ -184,11 +181,10 @@
     </div>
 
     <!--Skill section-->
-    <div style="background-color:rgb(5, 33, 78); color: #fff; padding: 50px 0px;">
-        <div style="max-width: 1200px; margin: auto; display: flex;flex-direction: column; gap: 30px;">
-            <h1 style="font-weight: 500; text-transform: uppercase;">Skills</h1>
-
-            <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 50px;">
+    <div style="background-color:rgb(5, 33, 78); color: #fff;" id="skills">
+        <div class="skill-container">
+            <h1>Skills</h1>
+            <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 40px;">
 
                 <p style="line-height: 1.5rem; opacity: 0.8; font-size: 12pt;">
                     I have skills in design, frontend, and backend development. For design,
@@ -199,85 +195,324 @@
                     Express, and Firebase for server operations and managing data.
                 </p>
 
-                <div style="display: flex; flex-direction: column; gap: 20px;">
-                    <h2 style="font-weight: 500; text-transform: uppercase;">Design</h2>
-                    <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;">
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/Adobe Photoshop.png" alt="" style="width: 50px; height: 50px;">
-                            Photoshop
-                        </div>
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/Figma.png" alt="" style="width: 50px; height: 50px;">
-                            Figma
+                <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex; flex-direction: column;">
+
+
+                        <div style="display: flex; padding: 0px 20px; gap: 20px;">
+                            <div class="dot-line-container">
+                                <div class="dot"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div style="padding-bottom: 20px;">
+                                <h2 style="font-weight: 500; text-transform: uppercase; margin-bottom: 10px;">Design
+                                </h2>
+                                <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;">
+                                    <div class="card">
+                                        <img src="assets/Adobe Photoshop.png" alt="">
+                                        Photoshop
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/Figma.png" alt="">
+                                        Figma
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <h2 style="font-weight: 500; text-transform: uppercase;">Frontend</h2>
-                    <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;">
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/Html 5.png" alt="" style="width: 50px; height: 50px;">
-                            HTML 5
-                        </div>
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/CSS3.png" alt="" style="width: 50px; height: 50px;">
-                            CSS 3
-                        </div>
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/JavaScript.png" alt="" style="width: 50px; height: 50px;">
-                            JavaScript
-                        </div>
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/Bootstrap.png" alt="" style="width: 50px; height: 50px;">
-                            Bootstrap
-                        </div>
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/Tailwind CSS.png" alt="" style="width: 50px; height: 50px;">
-                            Tailwind CSS
-                        </div>
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/React Native.png" alt="" style="width: 50px; height: 50px;">
-                            React
-                        </div>
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/React Native.png" alt="" style="width: 50px; height: 50px;">
-                            React Native (Mobile)
+                    <div>
+                        <div style="display: flex; padding:0px 20px; gap: 20px;">
+                            <div class="dot-line-container">
+                                <div class="dot"></div>
+                                <div style="width: 2px; height: calc(100% - 15px); background-color: #d9f4ff;">
+                                </div>
+                            </div>
+                            <div style="padding-bottom: 20px;">
+                                <h2 style="font-weight: 500; text-transform: uppercase;margin-bottom: 10px;">Frontend
+                                </h2>
+                                <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;">
+                                    <div class="card">
+                                        <img src="assets/Html 5.png" alt="">
+                                        HTML 5
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/CSS3.png" alt="">
+                                        CSS 3
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/JavaScript.png" alt="">
+                                        JavaScript
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/Bootstrap.png" alt="">
+                                        Bootstrap
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/Tailwind CSS.png" alt="">
+                                        Tailwind CSS
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/React Native.png" alt="">
+                                        React
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/React Native.png" alt="">
+                                        React Native (Mobile)
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <h2 style="font-weight: 500; text-transform: uppercase;">Backend</h2>
-                    <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;">
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/Node Js.png" alt="" style="width: 50px; height: 50px;">
-                            Node Js
+                    <div style="display: flex; padding: 0px 20px; gap: 20px;">
+                        <div class="dot-line-container">
+                            <div class="dot"></div>
+                            <div style="width: 2px; height: calc(100% - 15px); background-color: #d9f4ff;">
+                            </div>
                         </div>
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/Express Js_1.png" alt="" style="width: 50px; height: 50px;">
-                            Express Js
+                        <div>
+                            <h2 style="font-weight: 500; text-transform: uppercase; margin-bottom: 10px;">Backend
+                            </h2>
+                            <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;">
+                                <div class="card">
+                                    <img src="assets/Node Js.png" alt="">
+                                    Node Js
+                                </div>
+                                <div class="card">
+                                    <img src="assets/Express Js_1.png" alt="">
+                                    Express Js
+                                </div>
+                                <div class="card">
+                                    <img src="assets/JavaScript.png" alt="">
+                                    JavaScript
+                                </div>
+                            </div>
                         </div>
-                        <div
-                            style="background-color: #3386f1;display: flex; justify-content: center; align-items: center; gap: 10px; color: #fff;padding: 10px;border-radius: 8px;">
-                            <img src="assets/JavaScript.png" alt="" style="width: 50px; height: 50px;">
-                            JavaScript
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Experience section-->
+    <div style="background-color: #fff;" id="experience">
+        <div class="experience-container">
+            <h1>Experience</h1>
+
+            <div style="display: flex; flex-direction: column;">
+
+                <div style="display: flex; gap: 20px;">
+                    <div class="dot-line-container">
+                        <div class="dot">
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;gap: 6px; padding-bottom: 20px;">
+                        <span style="font-size: 16pt;">1+ Years</span>
+                        <span style="font-size: 12pt; opacity: 0.8;">Web Development with React</span>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+                    <div class="dot-line-container">
+                        <div class="dot">
+                        </div>
+                        <div class="line">
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;gap: 6px; padding-bottom: 20px;">
+                        <span style="font-size: 16pt;">4+ Months</span>
+                        <span style="font-size: 12pt; opacity: 0.8;">Web Development with Next Js</span>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+                    <div class="dot-line-container">
+                        <div class="dot"></div>
+                        <div class="line">
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column;gap: 6px;">
+                        <span style="font-size: 16pt;">6+ Months</span>
+                        <span style="font-size: 12pt; opacity: 0.8;">React Native & Mobile Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Project section-->
+    <div style="background-color:rgb(5, 33, 78)" id="projects">
+        <div class="project-container">
+            <h1 style="color: #fff;">Projects</h1>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="assets/chat.jpg" alt="" class="prev" />
+                    <div class="text-container">
+                        <span>Live Chat App</span>
+
+                        <div style="display: flex; gap: 10px;">
+                            <img src="assets/GitHub.png" alt="" class="github-icon">
+                            <button class="project-btn">
+                                <img src="assets/Right Arrow.png" alt=""
+                                    style="width: 24px; height: 24px; transform:rotate(-30deg);">
+                            </button>
                         </div>
                     </div>
                 </div>
 
-            </div>
+                <div class="card">
+                    <img src="assets/weather.jpg" alt="" class="prev" />
+                    <div class="text-container">
+                        <span>Wheater App</span>
+                        <div style="display: flex; gap: 10px;">
+                            <img src="assets/GitHub.png" alt="" class="github-icon">
+                            <button class="project-btn">
+                                <img src="assets/Right Arrow.png" alt=""
+                                    style="width: 24px; height: 24px; transform:rotate(-30deg);">
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <img src="assets/airbnb.jpg" alt="" class="prev" />
+                    <div class="text-container">
+                        <span>Airbnb clone App</span>
+                        <div style="display: flex; gap: 10px;">
+                            <img src="assets/GitHub.png" alt="" class="github-icon">
+                            <button class="project-btn">
+                                <img src="assets/Right Arrow.png" alt=""
+                                    style="width: 24px; height: 24px; transform:rotate(-30deg);">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/social.jpg" alt="" class="prev" />
+                    <div class="text-container">
+                        <span>Social Media App</span>
+                        <div style="display: flex; gap: 10px;">
+                            <img src="assets/GitHub.png" alt="" class="github-icon">
+                            <button class="project-btn">
+                                <img src="assets/Right Arrow.png" alt=""
+                                    style="width: 24px; height: 24px; transform:rotate(-30deg);">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/portfolio.png" alt="" class="prev" />
+                    <div class="text-container">
+                        <span>Portfolio website</span>
+                        <div style="display: flex; gap: 10px;">
+                            <img src="assets/GitHub.png" alt="" class="github-icon">
+                            <button class="project-btn">
+                                <img src="assets/Right Arrow.png" alt=""
+                                    style="width: 24px; height: 24px; transform:rotate(-30deg);">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <img src="assets/dialog.png" alt="" class="prev" />
+
+                    <div class="text-container">
+                        <span>My Dialog App Clone</span>
+                        <div style="display: flex; gap: 10px;">
+                            <img src="assets/GitHub.png" alt="" class="github-icon">
+                            <button class="project-btn">
+                                <img src="assets/Right Arrow.png" alt=""
+                                    style="width: 24px; height: 24px; transform:rotate(-30deg);">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
 
+    <!--Contact section-->
+    <div id="contact">
+        <div class="contact-container">
+            <h1>Contact <span style="color:#12b0ef; opacity: 1;">Me</span></h1>
+            <div style="display: grid; grid-template-columns: 1fr 1.5fr;">
+
+                <div>
+                    <p style="font-size: 12pt; margin-bottom: 30px;">
+                        Feel free to reach out if you'd like to discuss potential collaborations, projects, or have any
+                        questions!
+                    </p>
+
+                    <div class="table">
+                        <div class="row">
+                            <div class="icon-container">
+                                <img src="assets/Map.png" alt="" style="width: 20px; height: 20px;">
+                            </div>
+                            <div>
+                                <span>ADDRESS</span>
+                                <p>Mapalana, Kamburupitiya, Matara, Sri Lanka</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon-container">
+                                <img src="assets/Email.png" alt="" style="width: 24px; height: 24px;">
+                            </div>
+                            <div>
+                                <span>EMAIL</span>
+                                <p>jayamalt398@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon-container">
+                                <img src="assets/Call.png" alt="" style="width: 24px; height: 24px;">
+                            </div>
+                            <div>
+                                <span>CALL</span>
+                                <p>+94 75-9622397</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="display: flex; gap: 20px;">
+                        <input type="text" placeholder="YOUR NAME">
+                        <input type="text" placeholder="YOUR EMAIL">
+                    </div>
+                    <input type="text" placeholder="YOUR SUBJECT">
+                    <textarea name="" id="" rows="10" placeholder="MESSAGE"></textarea>
+                    <button class="btn">
+                        SEND MESSAGE
+                        <div
+                            style="width: 38px; height: 38px; display: flex;justify-content: center;align-items: center; background-color: #55a1c1; border-radius: 50px;">
+                            <img src="assets/Paper Plane.png" alt="" style="width: 24px; height: 24px;">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div style="background-color: rgb(5, 33, 78);">
+        <div class="footer-container">
+            <p style="text-align: center;">&copy;Thilina Jayamal - 2024</p>
+        </div>
+    </div>
 
 </body>
 
