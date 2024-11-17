@@ -16,12 +16,24 @@ a {
     color: inherit;
 }
 
+h1 {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h1 span {
+    color: #12b0ef;
+    opacity: 1;
+}
+
 /*------------------------hero--------------------------*/
 
 .hero-container {
     max-width: 1200px;
     margin: auto;
     font-family: Arial;
+    overflow: hidden;
 }
 
 .hero-left {
@@ -33,6 +45,11 @@ a {
     align-items: flex-start;
     gap: 30px;
     order: 1;
+}
+
+.hero-left p {
+    line-height: 1.5rem;
+    font-size: 13pt;
 }
 
 .hero-right {
@@ -125,6 +142,15 @@ header li:hover {
     font-size: 48pt;
     font-weight: 400;
     line-height: 4.4rem;
+    text-transform: inherit;
+}
+
+.hero h1 {
+    margin: 0%;
+}
+
+.hero span {
+    color: #55a1c1;
 }
 
 .hero .profile {
@@ -196,9 +222,10 @@ header li:hover {
     background-color: transparent;
     border: solid 2px #55a1c1;
     text-transform: uppercase;
+    font-weight: 500;
     display: flex;
     width: 210px;
-    height: 44px;
+    height: 48px;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
@@ -217,7 +244,7 @@ header li:hover {
 .btn::before {
     content: '';
     position: absolute;
-    background-color: #55a1c1;
+    background: linear-gradient(30deg, #55a1c1, #6ac5ec);
     left: 0px;
     right: 0px;
     top: 0px;
@@ -239,12 +266,14 @@ header li:hover {
 
 .hero-container .btn:hover .btn-container {
     transform: rotate(90deg);
-    background-color: #05214e;
+    background-color: transparent;
+    border: 4px solid #fff;
 }
 
 .contact-container .btn:hover .btn-container {
-    transform: rotate(45deg);
-    background-color: #05214e;
+    background-color: transparent;
+    border: 4px solid #fff;
+    transform: rotate(50deg);
 }
 
 .btn-container {
@@ -253,16 +282,16 @@ header li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #55a1c1;
+    background: linear-gradient(30deg, #55a1c1, #6ac5ec);
     border-radius: 50px;
     transition: transform 0.2s ease-in-out;
 }
 
-h1 {
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    font-weight: 500;
+.btn-container img {
+    width: 20px;
+    height: 20px;
 }
+
 
 /*---------------------- ABOUT------------------------------- */
 
@@ -274,7 +303,9 @@ h1 {
 }
 
 .about-container p {
-    padding: 10px;
+    font-size: 12pt;
+    opacity: 0.8;
+    line-height: 1.5rem;
 }
 
 .about-container span {
@@ -284,8 +315,27 @@ h1 {
 .about-container .table {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.about-container .details-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+.about-container h2 {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.about-container .details-column {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
 /*---------------------education---------------------- */
 .edu-container {
@@ -308,8 +358,8 @@ h1 {
 
 .edu-container .table {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .edu-container .date {
@@ -328,9 +378,19 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: #55a1c1;
-    border-radius: 30px;
+    border-radius: 50%;
 }
 
+.edu-container .icon-container img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.edu-container .content {
+    width: calc(100% - 40px);
+    height: fit-content;
+}
 
 .edu-container .column {
     display: flex;
@@ -340,7 +400,7 @@ h1 {
 
 .edu-container .row {
     display: flex;
-    gap: 6px;
+    gap: 10px;
 }
 
 /*----------------skills-----------------------*/
@@ -370,7 +430,7 @@ h1 {
     cursor: pointer;
     animation: appear ease-in-out;
     animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 10%;
 }
 
 .skill-container .card:hover {
@@ -393,6 +453,27 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+.skill-container h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.skill-card-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-card-row {
+    display: flex;
+    padding: 0px 20px;
+    gap: 20px;
+}
+
+.skill-content {
+    padding-bottom: 30px;
 }
 
 /*----------------------projects---------------------------*/
@@ -429,6 +510,11 @@ h1 {
     border: 1px solid rgba(12, 122, 248, 0.4);
 }
 
+.project-container .text-container div {
+    display: flex;
+    gap: 10px;
+}
+
 /*---------------------conatct----------------------------*/
 
 .contact-container .icon-container {
@@ -454,6 +540,12 @@ h1 {
     gap: 10px;
 }
 
+.contact-container .table p {
+    font-size: 12pt;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+}
+
 .contact-container .row {
     display: flex;
     gap: 10px;
@@ -461,8 +553,17 @@ h1 {
     align-items: flex-start;
 }
 
+.contact-container .icon-container img {
+    width: 20px;
+    height: 20px;
+}
+
 .contact-container span {
     opacity: 0.8;
+}
+
+.contact-container .content {
+    width: calc(100% - 40px);
 }
 
 input[type="text"] {
@@ -478,9 +579,10 @@ textarea {
     background-color: #eeeeee;
     border-radius: 18px;
     resize: none;
-    padding: 10px;
+    padding: 15px;
     outline: none;
     border: none;
+    font-family: Arial;
 
 }
 
@@ -557,6 +659,38 @@ textarea {
 .experience-container .line,
 .experience-container .dot {
     background-color: #12b0ef;
+}
+
+.experience-container .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-container .row {
+    display: flex;
+    gap: 20px;
+}
+
+.experience-container .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+.experience-container .row:nth-child(3) .text-container {
+    padding-bottom: 0px;
+}
+
+.experience-container .text-container .title {
+    font-size: 16pt;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.experience-container .text-container p {
+    font-size: 14pt;
+    opacity: 0.8;
 }
 
 /*--------------------footer---------------------*/
